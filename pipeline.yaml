@@ -1,0 +1,16 @@
+tasks:
+  - source: scripts/data_fetch.py
+    product:
+      nb: products/data_fetch.ipynb
+      data: products/kafka_data.csv
+
+  - source: scripts/data_clean.py
+    product:
+      nb: products/data_clean.ipynb
+      data: products/clean_data.csv
+  
+  - source: scripts/model.py
+    product:
+      nb: products/model.ipynb
+      train: products/training.csv
+      data: products/movie.pickle
